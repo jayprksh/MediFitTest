@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
+
+    </head>
+  <body>
+    <div class="app">
+      <div class="login">
+        <div class="input-group mb-1">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-1">
+          <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="btn-group" role="group">
+         <a type="button" class="btn btn-primary" href="page.html">Sign In</a><br>
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">Register</button>
+       </div>
+
+        </div>
+      <div class="register">
+        <!-- Modal -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-1">
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-1">
+                  <input type="password" class="form-control" placeholder="Conform Password" aria-label="Conform Password" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <script src="script/jquery-3.6.0.min.js"></script>
+      <script src="script/bootstrap/bootstrap.min.js"></script>
+    </body>
+  </html>

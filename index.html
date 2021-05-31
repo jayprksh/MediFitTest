@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+        <img src="images/circle-half.svg" alt="" width="30" height="24">
+      </a>
+        <a class="navbar-brand mb-0 h1" href="#">Title</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <ul class="navbar-nav mb-4 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="return show('home','login');">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="return show('login','home');">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    <div class="app">
+
+
+        <div class="login text-white" id="login">
+          <h3 align="center"><b>LOG IN</h3><br>
+          <div class="input-group mb-1">
+            <input type="text" class="form-control text-white" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-1">
+            <input type="password" class="form-control text-white" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="btn-group" role="group">
+           <a type="button" class="btn btn-primary" href="page.html">Sign In</a><br>
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">Register</button>
+         </div>
+
+          </div>
+          <div class="register">
+            <!-- Modal -->
+            <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h5 class="modal-title text-white" align="center" id="exampleModalLabel">Register</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group mb-1">
+                    <input type="text" class="form-control text-white" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-1">
+                    <input type="password" class="form-control text-white" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-1">
+                    <input type="password" class="form-control text-white" placeholder="Conform Password" aria-label="Conform Password" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+
+        <div class="home" id="home">
+          <h1>home</h1>
+          </div>
+
+      </div>
+
+    <div class="footer-clean" id="footer">
+              <footer>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-sm-4 col-md-3 item">
+                              <h3>Services</h3>
+                              <ul>
+                                  <li><a href="#">Web design</a></li>
+                                  <li><a href="#">Development</a></li>
+                                  <li><a href="#">Hosting</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-4 col-md-3 item">
+                              <h3>About</h3>
+                              <ul>
+                                  <li><a href="#">Company</a></li>
+                                  <li><a href="#">Team</a></li>
+                                  <li><a href="#">Legacy</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-4 col-md-3 item">
+                              <h3>Careers</h3>
+                              <ul>
+                                  <li><a href="#">Job openings</a></li>
+                                  <li><a href="#">Employee success</a></li>
+                                  <li><a href="#">Benefits</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                              <p class="copyright">Company Name © 2018</p>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+        </div>
+      <script src="script/jquery-3.6.0.min.js"></script>
+      <script src="script/bootstrap/bootstrap.min.js"></script>
+    </body>
+  </html>
